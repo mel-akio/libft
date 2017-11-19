@@ -7,7 +7,7 @@ char	*ft_strndup(const char *s, size_t n)
 {
 	char *str;
 
-	str = malloc(sizeof(char) * ft_strlen(s) + 1);
+	str = malloc(n + 1);
 	ft_strncpy(str, s, n);
 	return(str);
 }
