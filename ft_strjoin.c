@@ -6,20 +6,20 @@
 /*   By: mel-akio <mel-akio@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/13 11:09:57 by mel-akio     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/23 16:01:56 by mel-akio    ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/12/23 16:32:45 by mel-akio    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strjoin(char const *s1, char const *s2)
+char			*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*str;
-	size_t	i;
-	size_t	j;
-	size_t len_s1;
-	size_t len_s2;
+	char		*str;
+	size_t		i;
+	size_t		j;
+	size_t		len_s1;
+	size_t		len_s2;
 
 	i = 0;
 	j = 0;
