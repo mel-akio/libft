@@ -1,14 +1,25 @@
+/* ************************************************************************** */
+/*                                                          LE - /            */
+/*                                                              /             */
+/*   ft_striter.c                                     .::    .:/ .      .::   */
+/*                                                 +:+:+   +:    +:  +:+:+    */
+/*   By: mel-akio <mel-akio@student.le-101.fr>      +:+   +:    +:    +:+     */
+/*                                                 #+#   #+    #+    #+#      */
+/*   Created: 2017/11/08 17:10:32 by mel-akio     #+#   ##    ##    #+#       */
+/*   Updated: 2017/12/20 14:03:35 by mel-akio    ###    #+. /#+    ###.fr     */
+/*                                                         /                  */
+/*                                                        /                   */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void ft_striter(char *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
-	size_t i;
+	int	i;
 
 	i = 0;
-	while(i < ft_strlen(s))
-	{
-		(*f)(&s[i]);
-		i++;
-	}
-	i = 0;
+	if (s == NULL || f == NULL)
+		return ;
+	while (s[i])
+		(*f)(&s[i++]);
 }

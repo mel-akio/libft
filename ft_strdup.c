@@ -1,13 +1,24 @@
+/* ************************************************************************** */
+/*                                                          LE - /            */
+/*                                                              /             */
+/*   ft_strdup.c                                      .::    .:/ .      .::   */
+/*                                                 +:+:+   +:    +:  +:+:+    */
+/*   By: mel-akio <mel-akio@student.le-101.fr>      +:+   +:    +:    +:+     */
+/*                                                 #+#   #+    #+    #+#      */
+/*   Created: 2017/11/13 11:09:53 by mel-akio     #+#   ##    ##    #+#       */
+/*   Updated: 2017/12/20 14:03:06 by mel-akio    ###    #+. /#+    ###.fr     */
+/*                                                         /                  */
+/*                                                        /                   */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-size_t	ft_strlen(const char *s);
-char	*ft_strcpy(char *dest, const char *src);
-
-char	*ft_strdup(const char *s)
+char		*ft_strdup(const char *s)
 {
-	char *str;
+	char	*str;
 
-	str = malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (!(str = malloc(sizeof(char) * ft_strlen(s) + 1)))
+		return (NULL);
 	ft_strcpy(str, s);
-	return(str);
+	return (str);
 }
